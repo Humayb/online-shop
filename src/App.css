@@ -1,0 +1,143 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+h1 {
+  margin: 56px 0;
+  padding: 56px 0;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 24px 0;
+}
+
+h5 {
+  color: gray;
+}
+
+button {
+  border: none;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  transition: 0.5s ease-in-out;
+  font-size: 12px;
+  flex-direction: row-reverse;
+  margin: 10px 0;
+}
+ul li .quantity {
+  font-weight: bold;
+  text-align: right;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid gray;
+  margin: 10px 0;
+  padding: 2px;
+}
+ul li .quantity div {
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+ul li .quantity em {
+  border: none;
+  display: flex;
+  align-items: center;
+  color: rgb(192, 126, 4);
+}
+
+.store .box {
+  border-radius: 5px;
+  padding: 25px;
+}
+.store .box .text {
+  height: 150px;
+  display: block;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.store .box figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store .box figure img {
+  height: 200px;
+  width: auto;
+}
+.store .box .buy {
+  margin-top: 32px;
+}
+.store .box .buy strong {
+  display: flex;
+  align-items: center;
+}
+.store .box:hover {
+  box-shadow: 2px 7px 15px rgba(128, 128, 128, 0.222);
+}
+
+.card {
+  padding: 15px;
+  background: white;
+}
+.card ul {
+  width: 100%;
+}
+.card ul li {
+  width: 100px;
+  height: 50px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+}
+.card ul li strong {
+  display: block;
+}
+.card ul li span {
+  display: block;
+}
+.card ul li em {
+  display: block;
+}
+.card ul li .quantity button {
+  font-weight: bold;
+}
+
+.box {
+  padding: 5px;
+  width: 340px;
+}
+.box article {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.box article img {
+  margin: 30px auto;
+  padding: 0 60px;
+}
+.box article button {
+  background-color: rgb(255, 178, 34);
+  font-weight: bold;
+  margin: 5px 0;
+}
+.box article .text {
+  height: 100px;
+  width: 100%;
+}
+.box article .text p {
+  text-overflow: ellipsis;
+}
+.box article:hover {
+  box-shadow: -2px 7px 10px rgba(128, 128, 128, 0.251);
+}/*# sourceMappingURL=App.css.map */

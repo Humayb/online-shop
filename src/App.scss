@@ -1,0 +1,179 @@
+body{
+    background-color:rgb(245, 245, 245);
+}
+h1{
+    margin: 56px 0;
+    padding: 56px 0;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 24px 0;
+}
+h5{
+    color: gray;
+}
+button{
+    border: none;
+}
+ul{
+    padding: 0;
+
+    li{
+        list-style-type: none;
+        transition: .5s ease-in-out;
+        font-size: 12px;
+        flex-direction: row-reverse;
+        margin: 10px 0;
+
+        .quantity{
+            font-weight: bold;
+            text-align: right;
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid gray;
+            margin: 10px 0;
+            padding: 2px;
+
+            div{
+                font-weight: bold;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+            }
+            em{
+                border: none;
+                display: flex;
+                align-items: center;
+                color: rgb(192, 126, 4);
+
+            }
+        }
+    }
+
+}
+
+.store{
+    
+
+    .box{
+        border-radius: 5px;
+        padding:25px;
+
+        .text{
+            height: 150px;
+            display: block;
+            text-align: left;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        figure{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+
+                height: 200px;
+                width: auto;
+            }
+
+        }
+
+        .buy{
+            margin-top: 32px;
+            
+            strong{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &:hover{
+            box-shadow: 2px 7px 15px rgba(128, 128, 128, 0.222);
+        }
+
+    }
+
+    
+}
+
+.card{
+
+    padding: 15px;
+    background: white;
+    // border: 2px solid rebeccapurple;
+    // position: fixed;
+    // top: 200px;
+    // left: 0;
+
+    ul{
+        width: 100%;
+
+
+        li{
+            width: 100px;
+            height: 50px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: flex;
+
+            strong{
+                display: block;
+            }
+            span{
+                display: block;
+            }
+            em{
+                display: block;
+            }
+            .quantity{
+                button{
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+}
+
+.box{
+    padding: 5px;
+    width: 340px ;
+    
+    article{
+        margin-bottom: 20px;
+        padding: 20px;
+        img{
+            margin: 30px auto;
+            padding: 0 60px;
+        }
+
+        button{
+            background-color: rgb(255, 178, 34);
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .text{
+
+            height: 100px;
+            width: 100%;
+
+            p{
+                text-overflow: ellipsis;
+            }
+
+        }
+
+        &:hover{
+            box-shadow: -2px 7px 10px rgba(128, 128, 128, 0.251);
+        }
+    }
+}
+
