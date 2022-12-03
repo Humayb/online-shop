@@ -77,28 +77,25 @@ export default class Main extends Component {
     // }
     
 
-    // Finish = () => {
+    Buy = () => {
+      const temp = {
+        title: '',
+        price: '',
+        count: '',
+      }
 
-    // }
+      const _produts = document.querySelectorAll('#cart>li')
 
-  Finish = () =>{
-    const temp = {
-    title:'',
-    price : '',
-    count :''
+      for (let i=0; i<_produts.length; i++){
+        temp.price = document.querySelector('#cart>li:nth-of-type('+(i+1)+')>strong').innerHTML
+        temp.title =document.querySelector('#cart>li:nth-of-type('+(i+1)+')>span').innerHTML
+        temp.price = document.querySelector('#cart>li:nth-of-type('+(i+1)+')>.quantity>em').innerHTML
+        
+        temp.count = temp.count.substring(1)
+        myDataBase.push(temp)
+      }
+  
     }
-    const _products = document.querySelectorAll('#cart>li')
-    for(let i=0; i<_products.length; i++){
-      temp.price = document.querySelector('#cart>li:nth-of-type('+(i+1)+')>strong').innerHTML
-      temp.title = document.querySelector('#cart>li:nth-of-type('+(i+1)+')>span').innerHTML
-      temp.count = document.querySelector('#cart>li:nth-of-type('+(i+1)+')>em').innerHTML
-      temp.count = temp.count.substring(1)
-
-      myDataBase.push(temp)
-    }
-    console.log(myDataBase)
-  }
-
   
   render(){
     return(
@@ -107,7 +104,7 @@ export default class Main extends Component {
           <h1 className="col-12">Amozon Shop</h1>
           <div className="cart col-2">
             <ul id="cart" className='col-12'></ul>
-            <button onClick={this.Finish} className='btn bg-success p-2 text-light col-12'>Buy Now</button>
+            <button onClick={this.Buy} className='btn bg-success p-2 text-light col-12'>Buy Now</button>
           </div>
 
 
